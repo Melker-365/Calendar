@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(2, 16, 17);
+    height: 100vh;
+}
+h2, p {
+    color: white;
+    font-family: arial;
+}
+input {
+    height: 25px;
+    padding-left: 10px;
+    border-radius: 1vw;
+}
+button {
+    height: 28px;
+    border-radius: 1vw;
+    background-color: orangered;
+    color: white
+}
+
+#container {
+    background-color: rgb(2, 16, 17);
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+#container div {
+    background-color: rgb(255, 255, 255);
+    width: 20vw;
+    height: 30vw;
+    margin: 3vw 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-radius: 1vw;
+    border: 2px;
+    mask-border-width: 2px;
+    
+}
+#container p {
+    color: black
+}
+#container h2 {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    text-align: center;
+}
