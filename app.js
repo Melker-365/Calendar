@@ -33,6 +33,15 @@ for(let i = 0; i < content.length; i++){
 
 
 document.querySelector("#btnAdd").addEventListener("click", addDiv);
+document.addEventListener("keydown", function(event) {
+
+    if(event.key === "Enter"){
+
+        addDiv();
+
+    }
+
+});
 
 document.querySelector("#btnClear").addEventListener("click", function() {
 
@@ -64,5 +73,8 @@ function addDiv() {
     content.push([inputTitle.value, inputDescription.value]);
     localStorage.setItem("content", JSON.stringify(content));
     localStorage.setItem("divNum", JSON.stringify(divNum));
+
+    inputDescription.innerHTML = "";
+    inputTitle.innerHTML = "";
 
 }
